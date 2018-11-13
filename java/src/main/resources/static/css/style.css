@@ -1,0 +1,104 @@
+html,body,main {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    font-weight: 200;
+    background: -webkit-linear-gradient(45deg, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
+}
+input[type=text],input[type=number] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #cccccc;
+    border-radius: 10px;
+    outline: none;
+}
+.date-style {
+    width: 120px;
+    height: 40px;
+    background-color: #F8EEE7;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+
+}
+.company-create{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.portal{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    height:100%;
+    width:100%;
+}
+.header{
+    position: absolute;
+    margin: auto;
+    display: inline-flex;
+
+}
+.main{
+    position: absolute;
+    margin:auto;
+    display: inline-flex;
+    padding-top: 75px;
+}
+.main-index{
+    position: absolute;
+    margin:auto;
+    display: table;
+    padding-top: 75px;
+}
+.main-add-one{
+margin:auto;
+    display: inline-block;
+    padding-top: 75px;
+    float:left;
+}
+.main-add-two{
+margin:auto;
+    display: inline-block;
+    padding-top: 75px;
+    float:right;
+}
+
+.button{
+    background-color: white;
+        border: none;
+        color: navy;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 2px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        outline: none;
+}
+.inner-block{
+    display: inline-block;
+}
+.add-labels{
+    width:300px;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    display: -webkit-inline-box;
+}
