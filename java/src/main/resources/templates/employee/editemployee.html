@@ -1,0 +1,27 @@
+<div class="wrapper" xmlns:th="http://www.w3.org/1999/xhtml">
+    <form class="company-create" method="post" th:action="@{/employee/edit/{id}(id=${employee.id})}">
+        <div class="create-header">
+            Edit Company
+        </div>
+        <div class="create-name">
+            <div class="create-name-label">Name</div>
+            <input type="text" class="create-name-content" name="name" th:field="${employee.name}" />
+        </div>
+        <div class="create-name">
+            <div class="create-name-label">Experience Level</div>
+            <input type="text" class="create-name-content" name="experienceLevel" th:field="${employee.experienceLevel}"  />
+        </div>
+        <div class="create-price">
+            <div class="create-price-label">Salary</div>
+            <input type="number" min="0" step="0.01" class="create-price-content" name="salary" th:field="${employee.salary}" />
+        </div>
+        <div class="create-price">
+            <div class="create-price-label">Vacation Days</div>
+            <input type="number" min="0" step="1" class="create-price-content" name="vacation" th:field="${employee.vacation}"/>
+        </div>
+        <div class="create-button-holder">
+            <button type="submit" class="button">Edit Company</button>
+            <a type="button" href="/" class="button">Back</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="wrapper" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="portal">
+        <div class="main-index">
+            <div class="header">
+                <a type="button" th:href="@{/create}" class="button">Create Company</a>
+
+                <a type="button" th:href="@{/employee}" class="button">Employee</a>
+            </div>
+            <br/>
+            <br/>
+            <th:block th:each="company : ${companies}">
+                <div class="company">
+                    <h5>Company Name:</h5>
+                    <div class="company-name" th:text="${company.name}">
+                    </div>
+                    <div class="inner-block">
+                        <a type="button" th:href="@{/company/add}" class="button">Add Employees</a>
+                    </div>
+                    <div class="inner-block">
+                        <a type="button" th:href="@{/edit/{id}(id=${company.id})}" class="button">Edit</a>
+                    </div>
+                    <div class="inner-block">
+                        <a type="button" th:href="@{/delete/{id}(id=${company.id})}" class="button">Delete</a>
+                    </div>
+                </div>
+            </th:block>
+        </div>
+    </div>
+</div>

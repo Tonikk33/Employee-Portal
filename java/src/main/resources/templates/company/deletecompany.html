@@ -1,0 +1,15 @@
+<div class="wrapper" xmlns:th="http://www.w3.org/1999/xhtml">
+    <form class="company-create" method="post" th:action="@{/delete/{id}(id=${company.id})}">
+        <h4>
+            Delete Company
+        </h4>
+        <div class="create-name">
+            <div class="create-name-label">Company Name</div>
+            <input type="text" class="create-name-content" name="name" th:field="${company.name}"  disabled="disabled"/>
+        </div>
+        <div class="create-button-holder">
+            <button type="submit" class="button">Delete Company</button>
+            <a type="button" href="/" class="button">Back</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="wrapper" xmlns:th="http://www.w3.org/1999/xhtml">
+    <form class="company-create" method="post" th:action="@{/create}">
+        <h4>Create Company</h4>
+        <div class="create-name">
+            <div class="create-name-label">Name</div>
+            <input type="text"  class="create-name-content" name="name" />
+        </div>
+
+        <div class="create-button-holder">
+            <button type="submit" class="button">Add Company</button>
+            <a type="button" href="/" class="button">Back</a>
+        </div>
+    </form>
+</div>

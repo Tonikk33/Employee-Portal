@@ -1,0 +1,51 @@
+<div class="wrapper" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="content">
+        <div class="main-add-one">
+            <div class="create-header">
+                <h4> Companies: </h4>
+            </div>
+            <th:block th:each="company : ${companies}">
+                <div class="add-labels">
+                    <label>Company Name:</label>
+                    <div class="company-name" th:text="${company.name}">
+                    </div>
+                    <label>Company Id:</label>
+                    <div class="company-name" th:text="${company.id}">
+                    </div>
+                </div>
+                <br/>
+            </th:block>
+        </div>
+    </div>
+    <div class="main-add-two">
+        <div class="create-header">
+            <h4> Employees: </h4>
+        </div>
+        <th:block th:each="employee : ${employees}">
+            <div  class="add-labels">
+                <label>Employee Name:</label>
+                <div class="company-name" th:text="${employee.name}">
+                </div>
+                <label>Employee Id:</label>
+                <div class="company-name" th:text="${employee.id}">
+                </div>
+            </div>
+            <br/>
+        </th:block>
+    </div>
+    <form class="company-create" method="post" th:action="@{/company/add}">
+        <div>
+            <div class="create-name">
+                <div class="create-name-label">Company Id</div>
+                <input type="text" class="create-name-content" name="companyId"/>
+            </div>
+            <div class="create-name">
+                <div class="create-name-label">Employee Id</div>
+                <input type="text" class="create-name-content" name="employeeId"/>
+            </div>
+            <button type="submit" class="button">Add Employee to Company</button>
+            <a type="button" href="/" class="button">Back</a>
+        </div>
+    </form>
+
+</div>
