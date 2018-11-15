@@ -1,16 +1,23 @@
 package portal.bindingModel;
 
 
+import javax.validation.constraints.NotNull;
+
 public class EmployeeBindingModel {
 
+    @NotNull
     private String name;
 
+    @NotNull
     private String experienceLevel;
 
+    @NotNull
     private String startingDate;
 
+    @NotNull
     private Double salary;
 
+    @NotNull
     private Integer vacation;
 
     public EmployeeBindingModel() {

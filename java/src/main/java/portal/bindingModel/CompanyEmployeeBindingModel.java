@@ -1,9 +1,13 @@
 package portal.bindingModel;
 
+import javax.validation.constraints.NotNull;
+
 public class CompanyEmployeeBindingModel {
 
+    @NotNull
     private Integer companyId;
 
+    @NotNull
     private Integer employeeId;
 
     public CompanyEmployeeBindingModel() {

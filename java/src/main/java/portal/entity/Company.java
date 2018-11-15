@@ -15,9 +15,6 @@ public class Company {
     @NotNull
     private String name;
 
-//    @OneToMany(cascade = CascadeType.ALL)
-//    private List<Employee> employee;
-
     public Company() {
     }
 
@@ -42,14 +39,5 @@ public class Company {
     public void setName(String name) {
         this.name = name;
     }
-
-//    public List<Employee> getEmployee() {
-//        return employee;
-//    }
-//
-//    public void setEmployee(List<Employee> employee) {
-//        this.employee = employee;
-//    }
 }
-
 
