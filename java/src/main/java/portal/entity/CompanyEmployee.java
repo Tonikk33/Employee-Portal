@@ -4,15 +4,18 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "companyemployee")
 public class CompanyEmployee {
     @Id
     @Column(unique = true)
+    @NotNull
     public Integer employeeId;
 
     @Column
+    @NotNull
     public Integer companyId;
 
     public CompanyEmployee() {

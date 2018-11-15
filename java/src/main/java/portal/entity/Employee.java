@@ -2,6 +2,7 @@ package portal.entity;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "employee")
@@ -12,18 +13,23 @@ public class Employee {
     private Integer id;
 
     @Column
+    @NotNull
     private String name;
 
     @Column
+    @NotNull
     private String experienceLevel;
 
     @Column
+    @NotNull
     private String startingDate;
 
     @Column
+    @NotNull
     private Double salary;
 
     @Column
+    @NotNull
     private Integer vacation;
 
 

@@ -1,6 +1,7 @@
 package portal.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "company")
@@ -11,6 +12,7 @@ public class Company {
     public Integer id;
 
     @Column
+    @NotNull
     private String name;
 
 //    @OneToMany(cascade = CascadeType.ALL)
